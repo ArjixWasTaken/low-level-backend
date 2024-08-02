@@ -1,5 +1,8 @@
 package com.arjix.http
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 class HttpHeaders {
     private val headers: MutableMap<String, MutableList<String>> = mutableMapOf()
 

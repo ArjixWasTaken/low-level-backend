@@ -1,7 +1,9 @@
 package com.arjix.http
 
+import kotlinx.serialization.Serializable
 import java.io.OutputStream
 
+@Serializable
 data class HttpResponse(
     val status: HttpStatus,
     val headers: HttpHeaders,
